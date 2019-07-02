@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lenstore</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Section 3 -->
+      <section class="search">
+          <form id="search-form" method="get" onsubmit="return searchProducts()"> 
+            <input type="text" name="search-text" id="search-products"></input>
+            <input type="submit"></input>
+          </form>
+        </section>
+        <!-- Section 3 -->
+      <h1>Browse by Brand</h1>
+      <div class="brand-images">
+        <ul>
+          <li>
+            <img src="images/brands/freshlook.png" alt="freshlook"/>
+          </li>
+          <li>
+            <img src="images/brands/acuvue-define.gif" alt="acuvue-define"/>
+          </li>
+          <li>
+            <img src="images/brands/air-optix.gif" alt="air-optix"/>
+          </li>
+          <li>
+            <img src="images/brands/expressions.png" alt="expressions"/>  
+          </li>
+          <li>
+            <img src="images/brands/soflens-natural-colors.png" alt="soflens-natural-colors"/>
+          </li>
+        </ul>
+      </div>
+      <div class="products">
+        <div class="product-tabs">
+          <ul>
+            <li class="active"><a href="#">Best Sellers</a></li>
+            <li><a href="#">Daily</a></li>
+            <li><a href="#">Two Weekly</a></li>
+            <li><a href="#">Monthly</a></li>
+            <li><a href="#">Toric</a></li>
+            <li><a href="#">Multifocal</a></li>
+          </ul>
+        </div>
+        <div class="product-list">
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="images/products/lsprod001.jpg" alt="Soflens"/>
+            </div>
+            <div class="product-title">Soflens Daily Disposable</div>
+            <div class="product-brand">by Bausch & Lomb</div>
+            <div class="product-quantity">30 lenses</div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="images/products/lsprod013.jpg" alt="Soflens"/>
+            </div>
+            <div class="product-title">1 Day ACUVUE MOIST</div>
+            <div class="product-brand">by Acuvue</div>
+            <div class="product-quantity">30 lenses</div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="images/products/lsprod008.jpg" alt="Soflens"/>
+            </div>
+            <div class="product-title">Focus Dailies All Day Comfort</div>
+            <div class="product-brand">by CIBA Vision / Alcon</div>
+            <div class="product-quantity">30 lenses</div>
+          </div>
+          <div class="product-item">  
+            <div class="product-image-wrapper">
+              <img src="images/products/lsprod005.jpg" alt="Soflens"/>
+            </div>
+            <div class="product-title">Dailies Aqua Comfort Plus</div>
+            <div class="product-brand">by CIBA Vision / Alcon</div>
+            <div class="product-quantity">30 lenses</div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="images/products/lsprod077.jpg" alt="Soflens"/>
+            </div>
+            <div class="product-title">Air Optix Aqua</div>
+            <div class="product-brand">by CIBA Vision / Alcon</div>
+            <div class="product-quantity">3 lenses</div>
+          </div>
+          <div class="product-item">
+            <div class="product-image-wrapper">
+              <img src="images/products/lsprod461.jpg" alt="Soflens"/>
+            </div>
+            <div class="product-title">iWear Air</div>
+            <div class="product-brand">by CIBA Vision / Alcon</div>
+            <div class="product-quantity">3 lenses</div>
+          </div>
+        </div>
+        <a href="#" class="more-products">View all Contact Lenses</a>
+      </div>
+
+      <!-- Section 2 -->
+      <aside class="product-options">
+        <div class="product-price">
+          <span class="price">£14.39</span>
+          <span>per box</span>
+        </div>
+        <div class="product-quantity">
+          <label>Boxes per eye:</label>
+          <select name="product-quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <button class="add-to-basket" data-action="add-to-basket">Add to Basket</button>
+        <p class="purchase-description">
+          Purchasing this product entitles you to Vision Care Benefits with no further payment<a href="#">Learn more</a>
+        </p>
+        <p class="service-description">Our service doesn't stop at your letterbox</p>
+        <ul>
+          <li>FREE eye tests</li>
+          <li>Helful email reminders</li>
+          <li>In-house</li>
+        </ul>
+        <a href="#" class="learn-more">Learn more</a>
+      </aside>
+      <!-- Section 2 -->
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
